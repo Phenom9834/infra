@@ -12,7 +12,7 @@ jumpserver_name = "ooru-wg"
 mosip_email_id = "pritam.kondapratiwar@opstree.com"
 
 # SSH key name for AWS instances
-ssh_key_name = "ooru-mosip"
+ssh_key_name = "rdt-mosip"
 
 # AWS region
 aws_provider_region = "ap-south-1"
