@@ -6,28 +6,28 @@
 cloud_provider = "aws"
 
 # Environment name
-jumpserver_name = "<jumpserver_name>"
+jumpserver_name = "ooru-wg"
 
 # Email-ID for SSL certificate notifications
-mosip_email_id = "<mosip_email_id>"
+mosip_email_id = "pritam.kondapratiwar@opstree.com"
 
 # SSH key name for AWS instances
-ssh_key_name = "<ssh_key_name>"
+ssh_key_name = "mosip-aws"
 
 # AWS region
 aws_provider_region = "ap-south-1"
 
 # Jump server instance type
-jumpserver_instance_type = "t3.medium"
+jumpserver_instance_type = "t3a.medium"
 
 # Jump server AMI ID (required)
-jumpserver_ami_id = "ami-xxxxxxxxxxxxxx"
+jumpserver_ami_id = "ami-02d26659fd82cf299"
 
 # Whether to create an Elastic IP for the jump server
 create_jumpserver_eip = false
 
 # Network configuration
-network_name       = "mosip-boxes"
+network_name       = "ooru-boxes"
 network_cidr       = "10.0.0.0/16"
 public_subnets     = ["10.0.1.0/24", "10.0.2.0/24"]
 private_subnets    = ["10.0.3.0/24", "10.0.4.0/24"]
