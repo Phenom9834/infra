@@ -51,7 +51,7 @@ apps:
     version: 0.1.0
     chart: $WORKDIR/utils/istio-addons/postgres-istio-addons-0.1.0.tgz
     set:
-      postgresHost: "postgres.oorucluster.credissuer.com"
+      postgresHost: "postgres.testrdt.credissuer.com"
     wait: true
     priority: -4
     timeout: 1200
@@ -65,77 +65,77 @@ apps:
       dbUserPasswords.dbuserPassword: ""
       databases.mosip_master.enabled: "true"
       databases.mosip_master.branch: "v1.2.1.3"
-      databases.mosip_master.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_master.host: "postgres.testrdt.credissuer.com"
       databases.mosip_master.port: 5433
 
       databases.mosip_audit.enabled: "true"
       databases.mosip_audit.branch: "v1.2.0.1"
-      databases.mosip_audit.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_audit.host: "postgres.testrdt.credissuer.com"
       databases.mosip_audit.port: 5433
 
       databases.mosip_keymgr.enabled: "true"
       databases.mosip_keymgr.branch: "v1.2.1.0"
-      databases.mosip_keymgr.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_keymgr.host: "postgres.testrdt.credissuer.com"
       databases.mosip_keymgr.port: 5433
 
       databases.mosip_kernel.enabled: "true"
       databases.mosip_kernel.branch: " v1.2.0.2"
-      databases.mosip_kernel.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_kernel.host: "postgres.testrdt.credissuer.com"
       databases.mosip_kernel.port: 5433
 
       databases.mosip_idmap.enabled: "true"
       databases.mosip_idmap.branch: "v1.2.2.3"
-      databases.mosip_idmap.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_idmap.host: "postgres.testrdt.credissuer.com"
       databases.mosip_idmap.port: 5433
 
       databases.mosip_prereg.enabled: "true"
       databases.mosip_prereg.branch: "v1.2.0.3"
-      databases.mosip_prereg.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_prereg.host: "postgres.testrdt.credissuer.com"
       databases.mosip_prereg.port: 5433
 
       databases.mosip_idrepo.enabled: "true"
       databases.mosip_idrepo.branch: "v1.2.2.3"
-      databases.mosip_idrepo.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_idrepo.host: "postgres.testrdt.credissuer.com"
       databases.mosip_idrepo.port: 5433
 
       databases.mosip_ida.enabled: "true"
       databases.mosip_ida.branch: "v1.2.1.2-beta.1"
-      databases.mosip_ida.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_ida.host: "postgres.testrdt.credissuer.com"
       databases.mosip_ida.port: 5433
 
       databases.mosip_credential.enabled: "true"
       databases.mosip_credential.branch: "v1.2.2.3"
-      databases.mosip_credential.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_credential.host: "postgres.testrdt.credissuer.com"
       databases.mosip_credential.port: 5433
 
       databases.mosip_regprc.enabled: "true"
       databases.mosip_regprc.branch: "v1.2.1.2"
-      databases.mosip_regprc.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_regprc.host: "postgres.testrdt.credissuer.com"
       databases.mosip_regprc.port: 5433
 
       databases.mosip_pms.enabled: "true"
       databases.mosip_pms.branch: "v1.3.0-beta.2"
-      databases.mosip_pms.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_pms.host: "postgres.testrdt.credissuer.com"
       databases.mosip_pms.port: 5433
 
       databases.mosip_hotlist.enabled: "true"
       databases.mosip_hotlist.branch: "v1.2.1.3"
-      databases.mosip_hotlist.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_hotlist.host: "postgres.testrdt.credissuer.com"
       databases.mosip_hotlist.port: 5433
 
       databases.mosip_resident.enabled: "true"
       databases.mosip_resident.branch: "v1.2.1.2"
-      databases.mosip_resident.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_resident.host: "postgres.testrdt.credissuer.com"
       databases.mosip_resident.port: 5433
 
       databases.mosip_otp.enabled: "true"
       databases.mosip_otp.branch: "v1.3.0-beta.1"
-      databases.mosip_otp.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_otp.host: "postgres.testrdt.credissuer.com"
       databases.mosip_otp.port: 5433
 
       databases.mosip_digitalcard.enabled: "true"
       databases.mosip_digitalcard.branch: "v1.2.0.1"
-      databases.mosip_digitalcard.host: "postgres.oorucluster.credissuer.com"
+      databases.mosip_digitalcard.host: "postgres.testrdt.credissuer.com"
       databases.mosip_digitalcard.port: 5433
     wait: true
     timeout: 1200
@@ -183,7 +183,7 @@ apps:
     version: 0.1.0
     chart: $WORKDIR/utils/istio-addons/iam-istio-addons-0.1.0.tgz
     set:
-      keycloakExternalHost: "iam.oorucluster.credissuer.com"
+      keycloakExternalHost: "iam.testrdt.credissuer.com"
       keycloakInternalHost: "keycloak.keycloak"
       service: "keycloak"
     wait: true
@@ -198,9 +198,9 @@ apps:
     set:
       # image.repository: "mosipid/keycloak-init"
       # image.tag: "1.2.0.1"
-      keycloakExternalHost: "iam.oorucluster.credissuer.com"
+      keycloakExternalHost: "iam.testrdt.credissuer.com"
       keycloakInternalHost: "keycloak.keycloak"
-      keycloak.realms.mosip.realm_config.attributes.frontendUrl: "https://iam.oorucluster.credissuer.com/auth"
+      keycloak.realms.mosip.realm_config.attributes.frontendUrl: "https://iam.testrdt.credissuer.com/auth"
       keycloak.realms.mosip.realm_config.smtpServer.auth: "false"
       keycloak.realms.mosip.realm_config.smtpServer.host: "smtp.gmail.com"
       keycloak.realms.mosip.realm_config.smtpServer.port: "465"
@@ -263,7 +263,7 @@ apps:
     version: 1.2.0
     chart: $WORKDIR/utils/istio-addons/minio-istio-addons-1.2.0.tgz
     set:
-      externalHost: "minio.oorucluster.credissuer.com"
+      externalHost: "minio.testrdt.credissuer.com"
     wait: true
     timeout: 1200
     hooks:
@@ -293,7 +293,7 @@ apps:
     chart: mosip/activemq-artemis
     set: 
       istio.enabled: "true"
-      istio.hosts[0]: "activemq.oorucluster.credissuer.com"
+      istio.hosts[0]: "activemq.testrdt.credissuer.com"
       istio.ingressController.name: "ingressgateway-internal"
       istio.prefix: ""
     wait: true
@@ -374,7 +374,7 @@ apps:
     version: 1.2.0
     chart: $WORKDIR/utils/istio-addons/kafka-istio-addons-1.2.0.tgz
     set:
-      kafkaUiHost: "kafka.oorucluster.credissuer.com"
+      kafkaUiHost: "kafka.testrdt.credissuer.com"
       installName: "kafka-ui"
     wait: true
     timeout: 1200
@@ -389,28 +389,28 @@ apps:
     chart: mosip/landing-page
     set:
       landing.version: "develop"
-      landing.name: "oorucluster"
-      landing.api: "api.oorucluster.credissuer.com"
-      landing.apiInternal: "api-internal.oorucluster.credissuer.com"
-      landing.admin: "admin.oorucluster.credissuer.com"
-      landing.prereg: "prereg.oorucluster.credissuer.com"
-      landing.kafka: "kafka.oorucluster.credissuer.com"
-      landing.kibana: "kibana.oorucluster.credissuer.com"
-      landing.activemq: "activemq.oorucluster.credissuer.com"
-      landing.minio: "minio.oorucluster.credissuer.com"
-      landing.keycloak: "iam.oorucluster.credissuer.com"
-      landing.regclient: "regclient.oorucluster.credissuer.com"
-      landing.postgres.host: "postgres.oorucluster.credissuer.com"
+      landing.name: "testrdt"
+      landing.api: "api.testrdt.credissuer.com"
+      landing.apiInternal: "api-internal.testrdt.credissuer.com"
+      landing.admin: "admin.testrdt.credissuer.com"
+      landing.prereg: "prereg.testrdt.credissuer.com"
+      landing.kafka: "kafka.testrdt.credissuer.com"
+      landing.kibana: "kibana.testrdt.credissuer.com"
+      landing.activemq: "activemq.testrdt.credissuer.com"
+      landing.minio: "minio.testrdt.credissuer.com"
+      landing.keycloak: "iam.testrdt.credissuer.com"
+      landing.regclient: "regclient.testrdt.credissuer.com"
+      landing.postgres.host: "postgres.testrdt.credissuer.com"
       landing.postgres.port: "5433"
-      landing.compliance: "compliance.oorucluster.credissuer.com"
-      landing.pmp: "pmp.oorucluster.credissuer.com"
-      landing.resident: "resident.oorucluster.credissuer.com"
-      landing.esignet: "esignet.oorucluster.credissuer.com"
-      landing.smtp: "smtp.oorucluster.credissuer.com"
-      landing.healthservices: "healthservices.oorucluster.credissuer.com"
-      landing.injiweb: "injiweb.oorucluster.credissuer.com"
-      landing.injiverify: "injiverify.oorucluster.credissuer.com"
-      istio.host: "oorucluster.mosip.net"
+      landing.compliance: "compliance.testrdt.credissuer.com"
+      landing.pmp: "pmp.testrdt.credissuer.com"
+      landing.resident: "resident.testrdt.credissuer.com"
+      landing.esignet: "esignet.testrdt.credissuer.com"
+      landing.smtp: "smtp.testrdt.credissuer.com"
+      landing.healthservices: "healthservices.testrdt.credissuer.com"
+      landing.injiweb: "injiweb.testrdt.credissuer.com"
+      landing.injiverify: "injiverify.testrdt.credissuer.com"
+      istio.host: "testrdt.mosip.net"
     wait: true
     timeout: 1200
     hooks:
