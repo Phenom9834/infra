@@ -1,7 +1,7 @@
 # Environment name (infra component)
 cluster_name = "oorucluster"
 # MOSIP's domain (ex: sandbox.xyz.net)
-cluster_env_domain = "oorucluster.credissuer.com"
+cluster_env_domain = "testrdt.credissuer.com"
 # Email-ID will be used by certbot to notify SSL certificate expiry via email
 mosip_email_id = "pritam.kondapratiwar@opstree.com"
 # SSH login key name for AWS node instances (ex: my-ssh-key)
@@ -24,7 +24,7 @@ zone_id = "Z07357392EQQ8SHT1714S"
 
 ## UBUNTU 24.04
 # The Amazon Machine Image ID for the instances
-ami = "ami-02d26659fd82cf299" # Ubuntu 24.04 LTS AMI ID for ap-south-1
+ami = "ami-0ad21ae1d0696ad58" # Ubuntu 24.04 LTS AMI ID for ap-south-1
 
 # Repo K8S-INFRA URL
 k8s_infra_repo_url = "https://github.com/mosip/k8s-infra.git"
