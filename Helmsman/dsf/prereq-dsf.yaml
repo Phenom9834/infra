@@ -33,8 +33,8 @@ apps:
     timeout: 900
     priority: -6
     hooks:
-      postInstall: "$WORKDIR/hooks/install-istio-and-httpbin.sh oorucluster helmsman"
-      postUpgrade: "$WORKDIR/hooks/install-istio-and-httpbin.sh oorucluster helmsman"
+      postInstall: "$WORKDIR/hooks/install-istio-and-httpbin.sh testrdt helmsman"
+      postUpgrade: "$WORKDIR/hooks/install-istio-and-httpbin.sh testrdt helmsman"
 
   rancher-monitoring:
     namespace: cattle-monitoring-system
@@ -53,7 +53,7 @@ apps:
 
   elasticsearch:
     namespace: cattle-logging-system
-    enabled: false
+    enabled: true
     version: 17.9.25
     chart: mosip/elasticsearch
     set:
@@ -81,18 +81,18 @@ apps:
 
   istio-addons-logging:
     namespace: cattle-logging-system
-    enabled: false
+    enabled: true
     version: 0.1.0
     chart: $WORKDIR/utils/istio-addons/logging-istio-addons-0.1.0.tgz
     set:
-      kibanaHost: "kibana.oorucluster.credissuer.com"
+      kibanaHost: "kibana.testrdt.credissuer.com"
       installName: "elasticsearch-kibana"
     wait: true
     priority: -3
 
   rancher-logging-crd:
     namespace: cattle-logging-system
-    enabled: false
+    enabled: true
     version: 103.1.1+up4.4.0
     chart: mosip/rancher-logging-crd
     wait: true
@@ -100,7 +100,7 @@ apps:
 
   rancher-logging:
     namespace: cattle-logging-system
-    enabled: false
+    enabled: true
     version: 103.1.1+up4.4.0
     chart: mosip/rancher-logging
     wait: true
