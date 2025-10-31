@@ -6,7 +6,7 @@
 cloud_provider = "aws"
 
 # Environment name
-jumpserver_name = "ooru-wg"
+jumpserver_name = "ooru-wg-server"
 
 # Email-ID for SSL certificate notifications
 mosip_email_id = "pritam.kondapratiwar@opstree.com"
@@ -27,7 +27,7 @@ jumpserver_ami_id = "ami-02d26659fd82cf299"
 create_jumpserver_eip = false
 
 # Network configuration
-network_name       = "ooru-boxes"
+network_name       = "ooru-rdt-boxes"
 network_cidr       = "10.0.0.0/16"
 public_subnets     = ["10.0.1.0/24", "10.0.2.0/24"]
 private_subnets    = ["10.0.3.0/24", "10.0.4.0/24"]
