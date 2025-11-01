@@ -13,23 +13,23 @@ metadata:
   namespace: default
 data:
   installation-name: ${ENV}
-  installation-domain: ${ENV}.mosip.net
+  installation-domain: ${ENV}.credissuer.com
   mosip-version: ${VERSION}
-  mosip-api-host: api.${ENV}.mosip.net
-  mosip-api-internal-host: api-internal.${ENV}.mosip.net
-  mosip-prereg-host: prereg.${ENV}.mosip.net
-  mosip-activemq-host: activemq.${ENV}.mosip.net
-  mosip-kibana-host: kibana.${ENV}.mosip.net
-  mosip-admin-host: admin.${ENV}.mosip.net
-  mosip-regclient-host: regclient.${ENV}.mosip.net
-  mosip-minio-host: minio.${ENV}.mosip.net
-  mosip-kafka-host: kafka.${ENV}.mosip.net
-  mosip-iam-external-host: iam.${ENV}.mosip.net
-  mosip-postgres-host: postgres.${ENV}.mosip.net
-  mosip-pmp-host: pmp.${ENV}.mosip.net
-  mosip-resident-host: resident.${ENV}.mosip.net
-  mosip-compliance-host: compliance.${ENV}.mosip.net
-  mosip-esignet-host: esignet.${ENV}.mosip.net
-  mosip-smtp-host: smtp.${ENV}.mosip.net
-  mosip-signup-host: signup.${ENV}.mosip.net
+  mosip-api-host: api.${ENV}.credissuer.com
+  mosip-api-internal-host: api-internal.${ENV}.credissuer.com
+  mosip-prereg-host: prereg.${ENV}.credissuer.com
+  mosip-activemq-host: activemq.${ENV}.credissuer.com
+  mosip-kibana-host: kibana.${ENV}.credissuer.com
+  mosip-admin-host: admin.${ENV}.credissuer.com
+  mosip-regclient-host: regclient.${ENV}.credissuer.com
+  mosip-minio-host: minio.${ENV}.credissuer.com
+  mosip-kafka-host: kafka.${ENV}.credissuer.com
+  mosip-iam-external-host: iam.${ENV}.credissuer.com
+  mosip-postgres-host: postgres.${ENV}.credissuer.com
+  mosip-pmp-host: pmp.${ENV}.credissuer.com
+  mosip-resident-host: resident.${ENV}.credissuer.com
+  mosip-compliance-host: compliance.${ENV}.credissuer.com
+  mosip-esignet-host: esignet.${ENV}.credissuer.com
+  mosip-smtp-host: smtp.${ENV}.credissuer.com
+  mosip-signup-host: signup.${ENV}.credissuer.com
   is_glowroot_env: absent
