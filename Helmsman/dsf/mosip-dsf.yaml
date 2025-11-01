@@ -500,6 +500,7 @@ apps:
     set:
       # image.repository: "mosipid/credential-service"
       # image.tag: "1.2.2.2"
+      replicaCount: 2
       resources.limits.cpu: "500m"
       resources.limits.memory: "3000Mi"
       resources.requests.cpu: "200m"
@@ -515,6 +516,7 @@ apps:
     set:
       # image.repository: "mosipid/credential-request-generator"
       # image.tag: "1.2.2.2"
+      replicaCount: 2
       resources.limits.cpu: "1"
       resources.limits.memory: "4000Mi"
       resources.requests.cpu: "1"
@@ -528,9 +530,10 @@ apps:
     enabled: true
     version: 12.2.3
     chart: mosip/identity
-    # set:
-    #   image.repository: "mosipid/id-repository-identity-service"
-    #   image.tag: "1.2.2.2"
+    set:
+      # image.repository: "mosipid/credential-request-generator"
+      # image.tag: "1.2.2.2"
+      replicaCount: 2
     priority: -7
     timeout: 1200
 
@@ -539,9 +542,10 @@ apps:
     enabled: true
     version: 12.2.3
     chart: mosip/vid
-    # set:
-    #   image.repository: "mosipid/id-repository-vid-service"
-    #   image.tag: "1.2.2.2"
+    set:
+      # image.repository: "mosipid/credential-request-generator"
+      # image.tag: "1.2.2.2"
+      replicaCount: 2
     priority: -6
     timeout: 1200
 
